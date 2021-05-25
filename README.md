@@ -1,4 +1,4 @@
-# Instrumentation Examples
+# Logging Instrumentation Examples
 
 This project shows both Scala and Java examples of logging instrumentation driven by config file, using [logback-bytebuddy](https://tersesystems.github.io/terse-logback/guide/instrumentation/).
 
