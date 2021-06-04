@@ -13,7 +13,6 @@ lazy val root = (project in file("."))
     // Basic logback
     libraryDependencies += logbackClassic,
     libraryDependencies += logstashLogbackEncoder,
-    libraryDependencies += janino,
     libraryDependencies += jansi,
 
     // sqlite appender
