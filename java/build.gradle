@@ -17,10 +17,10 @@ dependencies {
     implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '6.6'
     implementation group: 'com.tersesystems.blacklite', name: 'blacklite-logback', version: '1.0.1'
 
-    implementation group: 'com.tersesystems.logback', name: 'logback-classic', version: '0.16.2'
-    implementation group: 'com.tersesystems.logback', name: 'logback-uniqueid-appender', version: '0.16.2'
-    implementation group: 'com.tersesystems.logback', name: 'logback-bytebuddy', version: '0.16.2'
-    implementation group: 'com.tersesystems.logback', name: 'logback-tracing', version: '0.16.2'
+    implementation group: 'com.tersesystems.logback', name: 'logback-classic', version: '1.0.0'
+    implementation group: 'com.tersesystems.logback', name: 'logback-uniqueid-appender', version: '1.0.0'
+    implementation group: 'com.tersesystems.logback', name: 'logback-bytebuddy', version: '1.0.0'
+    implementation group: 'com.tersesystems.logback', name: 'logback-tracing', version: '1.0.0'
 
     implementation group: 'net.bytebuddy', name: 'byte-buddy', version: '1.11.0'
 
@@ -36,6 +36,6 @@ test {
 application {
     mainClassName = 'example.Runner'
     applicationDefaultJvmArgs = [
-        '-javaagent:lib/logback-bytebuddy-0.16.2.jar',
+        '-javaagent:lib/logback-bytebuddy-1.0.0.jar',
     ]
 }

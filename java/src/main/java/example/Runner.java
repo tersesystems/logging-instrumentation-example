@@ -4,19 +4,23 @@ import ch.qos.logback.classic.LoggerContext;
 import org.slf4j.Logger;
 
 import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLPeerUnverifiedException;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 import java.security.cert.Certificate;
 
 public class Runner {
     public static void main(String[] args) {
+        startLogback();
+
         final SLF4JExample slf4JExample = new SLF4JExample();
         slf4JExample.run();
 
         stopLogback();
+    }
+
+    private static void startLogback() {
+        // ensure this starts before JUL logging gets underway
+        org.slf4j.LoggerFactory.getILoggerFactory();
     }
 
     static class SLF4JExample implements Runnable {
