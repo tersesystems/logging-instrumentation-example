@@ -35,6 +35,8 @@ test {
 
 application {
     mainClassName = 'example.Runner'
+    // Because an agent is used, you must use `./gradlew installDist`
+    // rather than calling `./gradlew run`
     applicationDefaultJvmArgs = [
         '-javaagent:lib/logback-bytebuddy-1.0.0.jar',
     ]
