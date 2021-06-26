@@ -2,7 +2,7 @@ import sbt._
 
 object Dependencies {
 
-  val terseLogback = "1.0.0"
+  val terseLogback = "1.0.1"
   val blacklite = "1.0.1"
 
   val scalaTest = "org.scalatest" %% "scalatest" % "3.2.8"
@@ -24,5 +24,5 @@ object Dependencies {
   val logbackByteBuddy = "com.tersesystems.logback" % "logback-bytebuddy" % terseLogback
 
   // https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy
-  val byteBuddy = "net.bytebuddy" % "byte-buddy" % "1.11.0"  
+  val byteBuddy = "net.bytebuddy" % "byte-buddy" % "1.11.5"  
 }
