@@ -2,8 +2,8 @@ import sbt._
 
 object Dependencies {
 
-  val terseLogback = "1.0.1"
-  val blacklite = "1.0.1"
+  val terseLogback = "1.1.1"
+  val blacklite = "1.2.2"
 
   val scalaTest = "org.scalatest" %% "scalatest" % "3.2.8"
 
